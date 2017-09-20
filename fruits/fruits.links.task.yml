@@ -1,0 +1,20 @@
+fruits.settings_tab:
+  route_name: fruits.fruits_settings
+  title: Settings
+  base_route: fruits.fruits_settings
+
+fruits.view:
+  route_name: entity.fruits.canonical
+  base_route: entity.fruits.canonical
+  title: View
+
+fruits.page_edit:
+  route_name: entity.fruits.edit_form
+  base_route: entity.fruits.canonical
+  title: Edit
+
+fruits.delete_confirm:
+  route_name: entity.fruits.delete_form
+  base_route: entity.fruits.canonical
+  title: Delete
+  weight: 0

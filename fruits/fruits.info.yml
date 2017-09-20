@@ -1,0 +1,5 @@
+name: Fruits
+type: module
+description: 'A fruits demo of a Content Entity type'
+package: custom
+core: 8.x

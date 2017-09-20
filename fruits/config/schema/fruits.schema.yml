@@ -1,0 +1,8 @@
+# Schema for the configuration files of the fruits module.
+fruits.settings:
+  type: config_object
+  label: 'Image Formatter'
+  mapping:
+      fruits_image_style:
+        type: string
+        label: 'Image Formatter'

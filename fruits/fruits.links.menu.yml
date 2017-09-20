@@ -1,0 +1,11 @@
+entity.fruits.collection:
+  title: 'Fruits Entity Example: Fruits listing'
+  route_name: entity.fruits.collection
+  description: 'List Fruits'
+  weight: 0
+
+fruits.admin.structure.settings:
+  title: 'Fruits Settings'
+  route_name: fruits.fruits_settings
+  description: 'Configure Fruits entity'
+  parent: system.admin_structure

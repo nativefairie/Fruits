@@ -1,0 +1,11 @@
+view fruits entity:
+  title: 'View Fruit entity'
+add fruits entity:
+  title: 'Add Fruit entity'
+edit fruits entity:
+  title: 'Edit Fruit entity'
+delete fruits entity:
+  title: 'Delete Fruit entity'
+administer fruits entity:
+  title: 'Administer Fruit entity'
+  restrict access: TRUE

@@ -1,0 +1,6 @@
+fruits.fruits_add:
+  route_name: fruits.fruits_add
+  title: 'Add Fruit'
+  appears_on:
+    - entity.fruits.collection
+    - entity.fruits.canonical

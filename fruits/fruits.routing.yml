@@ -1,0 +1,50 @@
+
+entity.fruits.canonical:
+  path: 'admin/content/fruits/{fruits}'
+  defaults:
+    _entity_view: 'fruits'
+    _title: 'Fruits Content'
+  options:
+    _admin_route: TRUE
+  requirements:
+    _permission: 'view fruits entity'
+
+entity.fruits.collection:
+  path: '/admin/content/fruits/collection'
+  defaults:
+    _entity_list: 'fruits'
+    _title: 'Fruits List'
+  requirements:
+    _permission: 'administer fruits entity'
+
+fruits.fruits_add:
+  path: '/admin/content/fruits/add'
+  defaults:
+    _entity_form: fruits.add
+    _title: 'Add fruit'
+  requirements:
+    _entity_create_access: 'fruits'
+
+entity.fruits.edit_form:
+  path: '/admin/content/fruits/{fruits}/edit'
+  defaults:
+    _entity_form: fruits.edit
+    _title: 'Edit fruit'
+  requirements:
+    _entity_access: 'fruits.edit'
+
+entity.fruits.delete_form:
+  path: '/admin/content/fruits/{fruits}/delete'
+  defaults:
+    _entity_form: fruits.delete
+    _title: 'Delete fruit'
+  requirements:
+    _entity_access: 'fruits.delete'
+
+fruits.fruits_settings:
+  path: 'admin/content/fruits_settings'
+  defaults:
+    _form: '\Drupal\fruits\Form\FruitsSettingsForm'
+    _title: 'Fruit Settings'
+  requirements:
+    _permission: 'administer fruits entity'
