@@ -59,15 +59,21 @@ class FruitsListBuilder extends EntityListBuilder{
     $row['fruits_type'] = $entity->getType();
 
     $config = \Drupal::config('fruits.settings');
-    $fruit_image = [
-      '#theme' => 'image_style',
-      '#style_name' => $config->get('fruits_image_style'),
-      '#uri' => $entity->fruits_image->entity->getFileUri(),
-      '#attributes' => [
-        'class' => 'image-responsive',
-      ],
-    ];
-    $row['fruits_image'] = \Drupal::service('renderer')->render($fruit_image);
+    if ($entity->fruits_image->entity) {
+      $fruit_image = [
+        '#theme' => 'image_style',
+        '#style_name' => $config->get('fruits_image_style'),
+        '#uri' => $entity->fruits_image->entity->getFileUri(),
+        '#attributes' => [
+          'class' => 'image-responsive',
+        ],
+      ];
+      $row['fruits_image'] = \Drupal::service('renderer')->render($fruit_image);
+    }
+    else {
+      $row['fruits_image'] = NULL;
+    }
+
     return $row + parent::buildRow($entity);
   }
 }

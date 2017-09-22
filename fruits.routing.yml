@@ -48,3 +48,35 @@ fruits.fruits_settings:
     _title: 'Fruit Settings'
   requirements:
     _permission: 'administer fruits entity'
+
+entity.fruits_type.collection:
+  path: '/admin/structure/fruits_types'
+  defaults:
+    _entity_list: 'fruits_type'
+    _title: 'Content types'
+  requirements:
+    _permission: 'administer content types'
+
+fruits.type_add:
+  path: '/admin/structure/fruits_types/add'
+  defaults:
+    _entity_form: 'fruits_type.add'
+    _title: 'Add content type'
+  requirements:
+    _permission: 'administer content types'
+
+entity.fruits_type.edit_form:
+  path: '/admin/structure/fruits_types/manage/{fruits_type}'
+  defaults:
+    _entity_form: 'fruits_type.edit'
+    _title_callback: '\Drupal\Core\Entity\Controller\EntityController::title'
+  requirements:
+    _permission: 'administer content types'
+
+entity.fruits_type.delete_form:
+  path: '/admin/structure/fruits_types/manage/{fruits_type}/delete'
+  defaults:
+    _entity_form: 'fruits_type.delete'
+    _title: 'Delete'
+  requirements:
+    _entity_access: 'fruits_type.delete'

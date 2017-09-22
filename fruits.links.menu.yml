@@ -9,3 +9,13 @@ fruits.admin.structure.settings:
   route_name: fruits.fruits_settings
   description: 'Configure Fruits entity'
   parent: system.admin_structure
+
+
+entity.fruits_type.collection:
+  title: 'Fruits types'
+  parent: system.admin_structure
+  description: 'Create and manage fields, forms, and display settings for fruits!'
+  route_name: entity.fruits_type.collection
+fruits.fruits_add:
+  title: 'Add fruits'
+  route_name: fruits.fruits_add

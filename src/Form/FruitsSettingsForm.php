@@ -80,6 +80,5 @@ class FruitsSettingsForm extends ConfigFormBase {
     $config_fruits->set('fruits_image_style', $form_state->getValue('fruits_image_style'));
     $config_fruits->save();
 
-    $form_state->setRedirectUrl($this->toUrl('collection'));
   }
 }

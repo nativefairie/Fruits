@@ -1,6 +1,10 @@
+fruits.type_add:
+  route_name: fruits.type_add
+  title: 'Add fruits type'
+  appears_on:
+    - entity.fruits_type.collection
 fruits.fruits_add:
   route_name: fruits.fruits_add
-  title: 'Add Fruit'
+  title: 'Add fruits'
   appears_on:
-    - entity.fruits.collection
-    - entity.fruits.canonical
+    - system.admin_content

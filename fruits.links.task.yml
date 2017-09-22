@@ -18,3 +18,12 @@ fruits.delete_confirm:
   base_route: entity.fruits.canonical
   title: Delete
   weight: 0
+
+entity.fruits_type.edit_form:
+  title: 'Edit'
+  route_name: entity.fruits_type.edit_form
+  base_route: entity.fruits_type.edit_form
+entity.fruits_type.collection:
+  title: List
+  route_name: entity.fruits_type.collection
+  base_route: entity.fruits_type.collection
